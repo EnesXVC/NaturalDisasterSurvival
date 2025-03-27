@@ -1,0 +1,16 @@
+local Players = game:GetService("Players")
+local StarterGui = game:GetService("StarterGui")
+
+local userId = Players:GetUserIdFromNameAsync("IEnesxvc")
+local thumbType = Enum.ThumbnailType.HeadShot
+local thumbSize = Enum.ThumbnailSize.Size420x420
+local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+
+if isReady then
+    StarterGui:SetCore("SendNotification", {
+        Title = "Detect Disaster Script Made By IEnes",
+        Text = "https://discord.gg/mpW2b5Nx",
+        Icon = content,
+        Duration = 10
+    })
+end
