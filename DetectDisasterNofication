@@ -1,0 +1,24 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Revenant", true))()
+
+Library.DefaultColor = Color3.fromRGB(0,255,0)
+
+Library:Notification({
+
+    Text = "Disaster Detect Script Made By IEnes",
+
+    Duration = 15
+})
+
+Library:Notification({
+
+    Text = "Commands in the console To open the console",
+
+    Duration = 20
+})
+
+Library:Notification({
+
+    Text = "type /console in chat on mobile, press f9 on pc",
+
+    Duration = 20
+})
